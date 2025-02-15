@@ -193,8 +193,8 @@ import React, { FC, useState } from "react";
         <div className="px-[5px] md:px-[8px] xl:px-[189px] py-[5px] md:py-[8px] xl:py-[50px] flex justify-between items-center">
           <div className="flex flex-col">
             <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[193px] mb-2" />
-            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
-            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[16px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[16px]">{`Wszelkie prawa zastrzeżone.`}</span>
           </div>
           <div className="flex gap-[10px] md:gap-[10px] xl:gap-[10px]">
             {renderIcons()}
@@ -227,8 +227,8 @@ import React, { FC, useState } from "react";
             {renderIcons()}
           </div>
           <div className="text-right flex flex-col">
-            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
-            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[16px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[16px]">{`Wszelkie prawa zastrzeżone.`}</span>
           </div>
         </div>
       
@@ -260,8 +260,8 @@ import React, { FC, useState } from "react";
               {renderIcons()}
             </div>
             <div className="text-right flex flex-col">
-              <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
-              <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
+              <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[16px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
+              <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[16px]">{`Wszelkie prawa zastrzeżone.`}</span>
             </div>
           </div>
         
