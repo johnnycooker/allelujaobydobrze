@@ -1,16 +1,18 @@
-import { FC } from "react";
-import MainLayout from "../components/layout/MainLayout";
 
-const HomePage: FC = () => {
-	return (
-		<>
-			<MainLayout>
-				<div className="bg-white w-full h-full text-black">
-					Test Pierwszego deploymentu
-				</div>
-			</MainLayout>
-		</>
-	);
+import React from "react";
+import MainLayout from "@/components/layout/MainLayout";
+
+const GeneratedPage: React.FC = () => {
+  return (
+    <MainLayout>
+      
+<section className="h-[150.3vh]" style={{ position: "relative", backgroundColor: "#04431c" }}>
+      
+    </section>
+
+    </MainLayout>
+  );
 };
 
-export default HomePage;
+export default GeneratedPage;
+    
