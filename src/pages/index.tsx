@@ -6,7 +6,7 @@ const GeneratedPage: React.FC = () => {
   return (
     <MainLayout>
       
-<section className="h-[167.3vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
+<section className="h-[128.2vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
       
     </section>
 
