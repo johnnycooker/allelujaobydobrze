@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
   import Link from "next/link";
-  import { FaFacebook, FaInstagram } from "react-icons/fa";
+  import {  } from "react-icons/fa";
   
   interface CategoryLink {
     name: string;
@@ -30,138 +30,113 @@ import React, { FC, useState } from "react";
   {
     "links": [
       {
-        "name": "Link kategorii",
+        "name": "Kim Jesteśmy",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Nasza Misja",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Zespół Ekspertów",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Partnerzy i Współpraca",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Certyfikaty i Nagrody",
         "url": "/podstrona"
       }
     ],
-    "name": "Kategoria 1",
+    "name": "O Nas",
     "numberOfLinks": 5
   },
   {
     "links": [
       {
-        "name": "Link kategorii",
+        "name": "Audyt Energetyczny",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Optymalizacja Energetyczna",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Monitoring i Zarządzanie Energią",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Instalacje Odnawialnych Źródeł Energii",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Doradztwo Energetyczne",
         "url": "/podstrona"
       }
     ],
-    "name": "Kategoria 2",
+    "name": "Usługi",
     "numberOfLinks": 5
   },
   {
     "links": [
       {
-        "name": "Link kategorii",
+        "name": "FAQ (Najczęściej Zadawane Pytania)",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Kontakt",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Polityka Prywatności",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Warunki Korzystania",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Pomoc Techniczna",
         "url": "/podstrona"
       }
     ],
-    "name": "Kategoria 3",
+    "name": "Wsparcie Klienta",
     "numberOfLinks": 5
   },
   {
     "links": [
       {
-        "name": "Link kategorii",
+        "name": "Blog",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Studia Przypadków",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Przewodniki i E-booki",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Aktualności Branżowe",
         "url": "/podstrona"
       },
       {
-        "name": "Link kategorii",
+        "name": "Media i Publikacje",
         "url": "/podstrona"
       }
     ],
-    "name": "Kategoria 4",
+    "name": "Zasoby",
     "numberOfLinks": 5
   }
 ];
-  const icons: IconItem[] = [
-  {
-    "icon": "FaFacebook",
-    "iconColor": "#4267B2",
-    "iconHoverColor": "#203D75",
-    "iconSizeValues": {
-      "mobile": "text-[20px]",
-      "tablet": "md:text-[22px]",
-      "desktop": "xl:text-[24px]"
-    },
-    "name": "Facebook",
-    "url": "https://facebook.com"
-  },
-  {
-    "icon": "FaInstagram",
-    "iconColor": "#E1306C",
-    "iconHoverColor": "#B02254",
-    "iconSizeValues": {
-      "mobile": "text-[20px]",
-      "tablet": "md:text-[22px]",
-      "desktop": "xl:text-[24px]"
-    },
-    "name": "Instagram",
-    "url": "https://instagram.com"
-  }
-];
+  const icons: IconItem[] = [];
   const numberOfCategories: number = 4;
  
   const iconMapping: Record<string, React.ComponentType<{ className?: string }>> = {
-    FaFacebook, FaInstagram
+    
   };
   
   // Komponent odpowiedzialny za pojedynczą ikonę
@@ -196,16 +171,16 @@ import React, { FC, useState } from "react";
   
   const Footer: FC = () => {
     return (
-      <footer className={`w-full bg-[#f8f8f8]`}>
+      <footer className={`w-full bg-[#212121]`}>
         {/* MOBILE layout */}
         <div className="md:hidden">
           
-        <div className="px-[5px] md:px-[8px] xl:px-[10px] py-[5px] md:py-[8px] xl:py-[10px]">
+        <div className="px-[5px] md:px-[8px] xl:px-[198px] py-[5px] md:py-[8px] xl:py-[38px]">
           {categories.slice(0, numberOfCategories).map((cat, i) => (
             <div key={i} className="mb-4">
-              <h4 className={`mb-2 text-[#333333] text-[14px] md:text-[15px] xl:text-[16px] font-normal md:font-normal xl:font-normal`}>{cat.name}</h4>
+              <h4 className={`mb-2 text-[#ffffff] text-[14px] md:text-[15px] xl:text-[20px] font-normal md:font-normal xl:font-semibold`}>{cat.name}</h4>
               {cat.links.slice(0, cat.numberOfLinks).map((link, idx) => (
-                <Link href={link.url} key={idx} className={`block text-[#333333] hover:text-[#555555] text-[12px] md:text-[13px] xl:text-[14px] font-normal md:font-normal xl:font-normal`}>
+                <Link href={link.url} key={idx} className={`block text-[#808080] hover:text-[#e0e0e0] text-[12px] md:text-[13px] xl:text-[16px] font-normal md:font-normal xl:font-semibold`}>
                   {link.name}
                 </Link>
               ))}
@@ -213,13 +188,13 @@ import React, { FC, useState } from "react";
           ))}
         </div>
       
-          <div className="border-[#cccccc] border-[1px] md:border-[1px] xl:border-[1px] w-[100%] md:w-[100%] xl:w-[100%] mx-auto my-4" />
+          <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[100%] md:w-[100%] xl:w-[80%] mx-auto my-4" />
           
-        <div className="px-[5px] md:px-[8px] xl:px-[10px] py-[5px] md:py-[8px] xl:py-[10px] flex justify-between items-center">
+        <div className="px-[5px] md:px-[8px] xl:px-[189px] py-[5px] md:py-[8px] xl:py-[50px] flex justify-between items-center">
           <div className="flex flex-col">
-            <img src="https://ladys-nails.eu/data/include/cms/Kierunek-Natura/Loga-marek/mohani.png?v=1716558057995" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[100px] mb-2" />
-            <span className="text-[#333333] text-[8px] md:text-[10px] xl:text-[12px]">{`Strona internetowa © ${new Date().getFullYear()}`}</span>
-            <span className="text-[#333333] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
+            <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[193px] mb-2" />
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
           </div>
           <div className="flex gap-[10px] md:gap-[10px] xl:gap-[10px]">
             {renderIcons()}
@@ -231,12 +206,12 @@ import React, { FC, useState } from "react";
         {/* TABLET layout */}
         <div className="hidden md:flex xl:hidden flex-col w-full">
           
-        <div className="px-[5px] md:px-[8px] xl:px-[10px] py-[5px] md:py-[8px] xl:py-[10px] w-full grid grid-cols-2 gap-8">
+        <div className="px-[5px] md:px-[8px] xl:px-[198px] py-[5px] md:py-[8px] xl:py-[38px] w-full grid grid-cols-2 gap-8">
           {categories.slice(0, numberOfCategories).map((cat, i) => (
             <div key={i}>
-              <h4 className={`mb-2 text-[#333333] text-[14px] md:text-[15px] xl:text-[16px] font-normal md:font-normal xl:font-normal`}>{cat.name}</h4>
+              <h4 className={`mb-2 text-[#ffffff] text-[14px] md:text-[15px] xl:text-[20px] font-normal md:font-normal xl:font-semibold`}>{cat.name}</h4>
               {cat.links.slice(0, cat.numberOfLinks).map((link, idx) => (
-                <Link href={link.url} key={idx} className={`block text-[#333333] hover:text-[#555555] text-[12px] md:text-[13px] xl:text-[14px] font-normal md:font-normal xl:font-normal`}>
+                <Link href={link.url} key={idx} className={`block text-[#808080] hover:text-[#e0e0e0] text-[12px] md:text-[13px] xl:text-[16px] font-normal md:font-normal xl:font-semibold`}>
                   {link.name}
                 </Link>
               ))}
@@ -244,16 +219,16 @@ import React, { FC, useState } from "react";
           ))}
         </div>
       
-          <div className="border-[#cccccc] border-[1px] md:border-[1px] xl:border-[1px] w-[100%] md:w-[100%] xl:w-[100%] mx-auto my-4" />
+          <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[100%] md:w-[100%] xl:w-[80%] mx-auto my-4" />
           
-        <div className="px-[5px] md:px-[8px] xl:px-[10px] py-[5px] md:py-[8px] xl:py-[10px] w-full relative flex justify-between items-center">
-          <img src="https://ladys-nails.eu/data/include/cms/Kierunek-Natura/Loga-marek/mohani.png?v=1716558057995" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[100px] object-contain" />
+        <div className="px-[5px] md:px-[8px] xl:px-[189px] py-[5px] md:py-[8px] xl:py-[50px] w-full relative flex justify-between items-center">
+          <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[193px] object-contain" />
           <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-[10px] md:gap-[10px] xl:gap-[10px]">
             {renderIcons()}
           </div>
           <div className="text-right flex flex-col">
-            <span className="text-[#333333] text-[8px] md:text-[10px] xl:text-[12px]">{`Strona internetowa © ${new Date().getFullYear()}`}</span>
-            <span className="text-[#333333] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
+            <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
           </div>
         </div>
       
@@ -262,13 +237,13 @@ import React, { FC, useState } from "react";
         {/* DESKTOP layout */}
         <div className="hidden xl:flex flex-col w-full">
           
-          <div className="px-[5px] md:px-[8px] xl:px-[10px] py-[5px] md:py-[8px] xl:py-[10px] w-full">
+          <div className="px-[5px] md:px-[8px] xl:px-[198px] py-[5px] md:py-[8px] xl:py-[38px] w-full">
             <div className="flex flex-wrap place-content-between gap-8">
               {categories.map((cat, i) => (
                 <div key={i} className="min-w-[140px]">
-                  <h4 className={`mb-2 text-[#333333] text-[14px] md:text-[15px] xl:text-[16px] font-normal md:font-normal xl:font-normal`}>{cat.name}</h4>
+                  <h4 className={`mb-2 text-[#ffffff] text-[14px] md:text-[15px] xl:text-[20px] font-normal md:font-normal xl:font-semibold`}>{cat.name}</h4>
                   {cat.links.slice(0, cat.numberOfLinks).map((link, idx) => (
-                    <Link href={link.url} key={idx} className={`block text-[#333333] hover:text-[#555555] text-[12px] md:text-[13px] xl:text-[14px] font-normal md:font-normal xl:font-normal`}>
+                    <Link href={link.url} key={idx} className={`block text-[#808080] hover:text-[#e0e0e0] text-[12px] md:text-[13px] xl:text-[16px] font-normal md:font-normal xl:font-semibold`}>
                       {link.name}
                     </Link>
                   ))}
@@ -277,16 +252,16 @@ import React, { FC, useState } from "react";
             </div>
           </div>
         
-          <div className="border-[#cccccc] border-[1px] md:border-[1px] xl:border-[1px] w-[100%] md:w-[100%] xl:w-[100%] mx-auto my-4" />
+          <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[100%] md:w-[100%] xl:w-[80%] mx-auto my-4" />
           
-          <div className="px-[5px] md:px-[8px] xl:px-[10px] py-[5px] md:py-[8px] xl:py-[10px] w-full relative flex justify-between items-center">
-            <img src="https://ladys-nails.eu/data/include/cms/Kierunek-Natura/Loga-marek/mohani.png?v=1716558057995" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[100px] object-contain" />
+          <div className="px-[5px] md:px-[8px] xl:px-[189px] py-[5px] md:py-[8px] xl:py-[50px] w-full relative flex justify-between items-center">
+            <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[60px] md:w-[80px] xl:w-[193px] object-contain" />
             <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-[10px] md:gap-[10px] xl:gap-[10px]">
               {renderIcons()}
             </div>
             <div className="text-right flex flex-col">
-              <span className="text-[#333333] text-[8px] md:text-[10px] xl:text-[12px]">{`Strona internetowa © ${new Date().getFullYear()}`}</span>
-              <span className="text-[#333333] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
+              <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Energaztech © ${new Date().getFullYear()}`}</span>
+              <span className="text-[#e3e3e3] text-[8px] md:text-[10px] xl:text-[12px]">{`Wszelkie prawa zastrzeżone.`}</span>
             </div>
           </div>
         
