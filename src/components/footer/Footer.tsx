@@ -175,7 +175,7 @@ import React, { FC, useState } from "react";
         {/* MOBILE layout */}
         <div className="md:hidden">
           
-        <div className="px-[5px] md:px-[8px] xl:px-[198px] py-[5px] md:py-[8px] xl:py-[38px]">
+        <div className="px-[5px] md:px-[8px] xl:px-[206px] py-[5px] md:py-[8px] xl:py-[38px]">
           {categories.slice(0, numberOfCategories).map((cat, i) => (
             <div key={i} className="mb-4">
               <h4 className={`mb-2 text-[#ffffff] text-[14px] md:text-[15px] xl:text-[20px] font-normal md:font-normal xl:font-semibold`}>{cat.name}</h4>
@@ -206,7 +206,7 @@ import React, { FC, useState } from "react";
         {/* TABLET layout */}
         <div className="hidden md:flex xl:hidden flex-col w-full">
           
-        <div className="px-[5px] md:px-[8px] xl:px-[198px] py-[5px] md:py-[8px] xl:py-[38px] w-full grid grid-cols-2 gap-8">
+        <div className="px-[5px] md:px-[8px] xl:px-[206px] py-[5px] md:py-[8px] xl:py-[38px] w-full grid grid-cols-2 gap-8">
           {categories.slice(0, numberOfCategories).map((cat, i) => (
             <div key={i}>
               <h4 className={`mb-2 text-[#ffffff] text-[14px] md:text-[15px] xl:text-[20px] font-normal md:font-normal xl:font-semibold`}>{cat.name}</h4>
@@ -237,7 +237,7 @@ import React, { FC, useState } from "react";
         {/* DESKTOP layout */}
         <div className="hidden xl:flex flex-col w-full">
           
-          <div className="px-[5px] md:px-[8px] xl:px-[198px] py-[5px] md:py-[8px] xl:py-[38px] w-full">
+          <div className="px-[5px] md:px-[8px] xl:px-[206px] py-[5px] md:py-[8px] xl:py-[38px] w-full">
             <div className="flex flex-wrap place-content-between gap-8">
               {categories.map((cat, i) => (
                 <div key={i} className="min-w-[140px]">
