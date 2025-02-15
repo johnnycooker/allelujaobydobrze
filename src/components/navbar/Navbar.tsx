@@ -11,8 +11,24 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    "label": "main",
+    "label": "Strona główna",
     "href": "/"
+  },
+  {
+    "label": "Referencje",
+    "href": "/referencje"
+  },
+  {
+    "label": "Usługi",
+    "href": "/uslugi"
+  },
+  {
+    "label": "Certyfikaty",
+    "href": "/certyfikaty"
+  },
+  {
+    "label": "O nas",
+    "href": "/o-nas"
   }
 ];
 
@@ -76,7 +92,7 @@ const Navbar: FC = () => {
   return (
     <>
       <motion.nav
-        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-none bg-[#878787] md:bg-[#878787] xl:bg-[#878787] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.6rem] md:h-[4.6rem] xl:h-[4.6rem] px-[1rem] md:px-[1rem] xl:px-[1rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
+        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.6rem] md:h-[4.6rem] xl:h-[4.6rem] px-[1rem] md:px-[1rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
       >
         {/* MOBILE: widoczny tylko na < md */}
         <div className="flex items-center w-full md:hidden">
@@ -84,9 +100,9 @@ const Navbar: FC = () => {
           {/* Logo */}
           <Link href="/" className="md:ml-0">
             <img
-              src="https://9.allegroimg.com/s1024/0cbde8/0f4e067c4432bfe3642da1782279"
+              src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
               alt="Logo"
-              className="w-[200px] md:w-[200px] xl:w-[201px] h-[5.32rem] md:h-[5.32rem] xl:h-[5.32rem]"
+              className="w-[200px] md:w-[200px] xl:w-[262px] h-[5.32rem] md:h-[5.32rem] xl:h-[3.78rem]"
             />
           </Link>
 
@@ -140,9 +156,9 @@ const Navbar: FC = () => {
     {/* Logo po lewej */}
     <Link href="/" className="mr-auto">
       <img
-        src="https://9.allegroimg.com/s1024/0cbde8/0f4e067c4432bfe3642da1782279"
+        src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
         alt="Logo"
-        className="w-[200px] md:w-[200px] xl:w-[201px] h-[5.32rem] md:h-[5.32rem] xl:h-[5.32rem]"
+        className="w-[200px] md:w-[200px] xl:w-[262px] h-[5.32rem] md:h-[5.32rem] xl:h-[3.78rem]"
       />
     </Link>
 
@@ -161,9 +177,9 @@ const Navbar: FC = () => {
     {/* Logo po lewej */}
     <Link href="/" className="mr-auto">
       <img
-        src="https://9.allegroimg.com/s1024/0cbde8/0f4e067c4432bfe3642da1782279"
+        src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
         alt="Logo"
-        className="w-[200px] md:w-[200px] xl:w-[201px] h-[5.32rem] md:h-[5.32rem] xl:h-[5.32rem]"
+        className="w-[200px] md:w-[200px] xl:w-[262px] h-[5.32rem] md:h-[5.32rem] xl:h-[3.78rem]"
       />
     </Link>
 
