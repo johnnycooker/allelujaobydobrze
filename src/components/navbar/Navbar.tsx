@@ -92,7 +92,7 @@ const Navbar: FC = () => {
   return (
     <>
       <motion.nav
-        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.6rem] md:h-[4.6rem] xl:h-[4.6rem] px-[1rem] md:px-[1rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
+        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-100 md:bg-opacity-100 xl:bg-opacity-100 backdrop-blur-0 md:backdrop-blur-0 xl:backdrop-blur-0 border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-0 md:border-0 xl:border-0 rounded-b-1 md:rounded-b-0 xl:rounded-b-0 h-[4.03rem] md:h-[4.6rem] xl:h-[4.6rem] px-4 md:px-8 xl:px-64 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
       >
         {/* MOBILE: widoczny tylko na < md */}
         <div className="flex items-center w-full md:hidden">
@@ -102,7 +102,7 @@ const Navbar: FC = () => {
             <img
               src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
               alt="Logo"
-              className="w-[200px] md:w-[200px] xl:w-[262px] h-[5.32rem] md:h-[5.32rem] xl:h-[3.78rem]"
+              className="w-[180px] md:w-[188px] xl:w-[262px] h-[2.61rem] md:h-[3.14rem] xl:h-[3.78rem]"
             />
           </Link>
 
@@ -158,12 +158,12 @@ const Navbar: FC = () => {
       <img
         src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
         alt="Logo"
-        className="w-[200px] md:w-[200px] xl:w-[262px] h-[5.32rem] md:h-[5.32rem] xl:h-[3.78rem]"
+        className="w-[180px] md:w-[188px] xl:w-[262px] h-[2.61rem] md:h-[3.14rem] xl:h-[3.78rem]"
       />
     </Link>
 
     {/* Linki */}
-    <div className="space-x-[1rem]">
+    <div className="space-x-6">
       {navItems.map((item) => (
         <NavLink key={item.href} label={item.label} href={item.href} />
       ))}
@@ -179,12 +179,12 @@ const Navbar: FC = () => {
       <img
         src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
         alt="Logo"
-        className="w-[200px] md:w-[200px] xl:w-[262px] h-[5.32rem] md:h-[5.32rem] xl:h-[3.78rem]"
+        className="w-[180px] md:w-[188px] xl:w-[262px] h-[2.61rem] md:h-[3.14rem] xl:h-[3.78rem]"
       />
     </Link>
 
     {/* Linki */}
-    <div className="space-x-[1rem]">
+    <div className="space-x-6">
       {navItems.map((item) => (
         <NavLink key={item.href} label={item.label} href={item.href} />
       ))}
@@ -213,15 +213,15 @@ const Navbar: FC = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.3 }}
-              className={`fixed z-50 md:hidden bg-[#303030] md:bg-[#303030] xl:bg-[#303030] left-0 md:left-0 xl:left-0 w-[75%] md:w-[75%] xl:w-[75%] shadow-md`}
+              className={`fixed z-50 md:hidden bg-[#fafafa] md:bg-[#fafafa] xl:bg-[#fafafa] left-0 md:left-0 xl:left-0 w-[80%] md:w-[80%] xl:w-[80%] shadow-md`}
               
       style={{
-        top: "4.6rem",
-        height: "calc(var(--vh, 1vh) * 100 - 4.6rem)",
+        top: "4.03rem",
+        height: "calc(var(--vh, 1vh) * 100 - 4.03rem)",
       }}
   
             >
-              <div className={`mt-6 flex flex-col px-6 gap-[1rem] text-left md:text-left xl:text-left`}>
+              <div className={`mt-6 flex flex-col px-6 gap-4 md:gap-4 xl:gap-4 text-left md:text-left xl:text-left`}>
                 {navItems.map((item) => (
                   <NavLink
                     key={item.href}
