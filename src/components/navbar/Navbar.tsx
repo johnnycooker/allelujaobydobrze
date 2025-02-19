@@ -92,7 +92,7 @@ const Navbar: FC = () => {
   return (
     <>
       <motion.nav
-        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-100 md:bg-opacity-100 xl:bg-opacity-100 backdrop-blur-0 md:backdrop-blur-0 xl:backdrop-blur-0 border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-0 md:border-0 xl:border-0 rounded-b-1 md:rounded-b-0 xl:rounded-b-0 h-[4.03rem] md:h-[4.6rem] xl:h-[4.6rem] px-4 md:px-8 xl:px-64 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
+        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.03rem] md:h-[4.6rem] xl:h-[5.75rem] px-[1rem] md:px-[2rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
       >
         {/* MOBILE: widoczny tylko na < md */}
         <div className="flex items-center w-full md:hidden">
@@ -163,7 +163,7 @@ const Navbar: FC = () => {
     </Link>
 
     {/* Linki */}
-    <div className="space-x-6">
+    <div className="space-x-[1rem]">
       {navItems.map((item) => (
         <NavLink key={item.href} label={item.label} href={item.href} />
       ))}
@@ -184,7 +184,7 @@ const Navbar: FC = () => {
     </Link>
 
     {/* Linki */}
-    <div className="space-x-6">
+    <div className="space-x-[2rem]">
       {navItems.map((item) => (
         <NavLink key={item.href} label={item.label} href={item.href} />
       ))}
@@ -221,7 +221,7 @@ const Navbar: FC = () => {
       }}
   
             >
-              <div className={`mt-6 flex flex-col px-6 gap-4 md:gap-4 xl:gap-4 text-left md:text-left xl:text-left`}>
+              <div className={`mt-6 flex flex-col px-6 gap-[1rem] text-left md:text-left xl:text-left`}>
                 {navItems.map((item) => (
                   <NavLink
                     key={item.href}
