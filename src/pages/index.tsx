@@ -6,8 +6,8 @@ const GeneratedPage: React.FC = () => {
   return (
     <MainLayout>
       
-<section className="h-[22.7vh] md:h-[63.2vh] xl:h-[83.5vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
-      
+<section className="h-[224.4vh] md:h-[144.6vh] xl:h-[97.8vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
+      <img src="https://czat.ai/img/avatars/full-og/kotek.jpg" alt="" className="w-[52.552083333333336%] h-[35.42825361512792%] left-[0%] top-[0%]" style={{ position: "absolute" }} />
     </section>
 
     </MainLayout>
