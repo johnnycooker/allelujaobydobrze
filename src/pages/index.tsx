@@ -9,7 +9,7 @@ const GeneratedPage: React.FC = () => {
 <section className="h-[224.4vh] md:h-[144.6vh] xl:h-[97.8vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
       <img src="https://czat.ai/img/avatars/full-og/kotek.jpg" alt="" className="w-[35.052083333333336%] h-[20.967741935483872%] left-[5.833333333333333%] top-[19.577308120133473%]" style={{ position: "absolute" }} />
 
-<img src="https://czat.ai/img/avatars/full-og/kotek.jpg" alt="" className="w-[40.78125%] h-[26.195773081201335%] left-[47.60416666666665%] top-[37.37486095661845%]" style={{ position: "absolute" }} />
+<img src="https://czat.ai/img/avatars/full-og/kotek.jpg" alt="" className="w-[40.78125%] h-[26.195773081201335%] left-[48.541666666666664%] top-[62.958843159065616%]" style={{ position: "absolute" }} />
     </section>
 
     </MainLayout>
