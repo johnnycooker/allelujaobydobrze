@@ -27,7 +27,7 @@ const NavLink: FC<NavLinkProps> = ({ label, href, children, onClick }) => {
     <Link
       href={href}
       onClick={onClick}
-      className="text-[#000000] md:text-[#000000] xl:text-[#000000] hover:text-[#000000] md:hover:text-[#000000] xl:hover:text-[#4f4f4f] text-[18px] md:text-[16px] xl:text-[20px] font-medium md:font-normal xl:font-medium normal-case md:normal-case xl:normal-case tracking-[1px] md:tracking-[0px] xl:tracking-[2px] transition-colors duration-300 relative"
+      className="text-[#000000] md:text-[#000000] xl:text-[#000000] hover:text-[#000000] md:hover:text-[#000000] xl:hover:text-[#4f4f4f] text-[18px] md:text-[16px] xl:text-[21px] font-medium md:font-normal xl:font-medium normal-case md:normal-case xl:normal-case tracking-[1px] md:tracking-[0px] xl:tracking-[2px] transition-colors duration-300 relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
