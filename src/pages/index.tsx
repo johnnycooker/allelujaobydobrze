@@ -8,8 +8,8 @@ const GeneratedPage: React.FC = () => {
       
 <section className="h-[93.7vh] md:h-[186.8vh] xl:h-[92.4vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
       <img src="https://czat.ai/img/avatars/full-og/kotek.jpg" alt="" className="w-[80.63347868217055%] md:w-[72.49110772357724%] xl:w-[35.052083333333336%] h-[13.402271518413066%] md:h-[11.82388637345708%] xl:h-[20.967741935483872%] left-[8.624031007751924%] md:left-[21.686991869918703%] xl:left-[5.833333333333333%] top-[35.771907366943445%] md:top-[28.289679822049372%] xl:top-[19.577308120133473%]" style={{ position: "absolute" }} />
-<div class="w-[61.62669573643411%] md:w-[53.583587398373986%] xl:w-[26.510416666666668%] h-[9.429129576505254%] md:h-[6.688076623085298%] xl:h-[10.706713780918728%] left-[16.71269379844966%] md:left-[19.02693089430901%] xl:left-[59.27083333333338%] top-[11.380472209568133%] md:top-[8.812519165032267%] xl:top-[33.2155477031802%] absolute">
-    <a href="/asdasd" class="bg-[#a81f1f] hover:bg-[#49bc86] text-[#7a8118] hover:text-[#917878] text-[49px] font-[700] rounded-[80px] border-[2px] border-[#161466] hover:border-[#1a471f] px-4 py-2 cursor-pointer">
+<div className="w-[61.62669573643411%] md:w-[53.583587398373986%] xl:w-[26.510416666666668%] h-[9.429129576505254%] md:h-[6.688076623085298%] xl:h-[10.706713780918728%] left-[16.71269379844966%] md:left-[19.02693089430901%] xl:left-[59.79166666666673%] top-[11.380472209568133%] md:top-[8.812519165032267%] xl:top-[30.624263839811515%] absolute">
+    <a href="/asdasd" className="bg-[#a81f1f] hover:bg-[#49bc86] text-[#7a8118] hover:text-[#917878] text-[49px] font-[700] rounded-[80px] border-[2px] border-[#161466] hover:border-[#1a471f] px-4 py-2 cursor-pointer">
       CIPA
     </a>
   </div>
