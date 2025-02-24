@@ -23,7 +23,7 @@ const GeneratedPage: React.FC = () => {
   </section>
 <section className="h-[93.3vh] md:h-[50vh]" style={{ position: "relative", backgroundColor: "#971717" }}>
 	<div className="w-[42.86458333333333%] h-[74.13043478260869%] left-[4.999999999999997%] top-[10.869565217391303%]" style={{ position: "absolute", backgroundColor: "#f0f0f0" }}>
-	<p className="text-[20px] text-end w-[80.68043742405831%] h-[61.05571847507331%] left-[9.113001215066822%] top-[16.715542521994138%]" style={{ position: "absolute", color: "#176f0b" }}>Dzięki takiemu podejściu logika generowania responsywnych klas oraz inline stylów została wyizolowana w oddzielnych funkcjach, co ułatwia późniejsze modyfikacje i utrzymanie kodu.</p>
+	<p className="text-[20px] text-end w-[80.68043742405831%] h-[61.05571847507331%] left-[9.113001215066822%] top-[16.715542521994138%] absolute text-[#176f0b]">Dzięki takiemu podejściu logika generowania responsywnych klas oraz inline stylów została wyizolowana w oddzielnych funkcjach, co ułatwia późniejsze modyfikacje i utrzymanie kodu.</p>
   </div>
   </section>
 
