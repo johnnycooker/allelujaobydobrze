@@ -21,7 +21,7 @@ const GeneratedPage: React.FC = () => {
   </Link>
 </div>
   </section>
-<section className="h-[93.3vh] md:h-[50vh]" style={{ position: "relative", backgroundColor: "#971717" }}>
+<section className="h-[93.3vh] md:h-[50vh]" style={{ position: "relative", backgroundImage: "url(https://tropimyprzygody.pl/wp-content/uploads/2023/08/inuici-%E2%80%93-7-najciekawszych-faktow-na-temat-eskimosow-1080x700.jpg)", backgroundSize: "cover", backgroundPosition: "center" }}>
 	<div className="w-[42.86458333333333%] h-[74.13043478260869%] left-[4.999999999999997%] md:left-[52.13541666666676%] xl:left-[4.999999999999997%] top-[10.869565217391303%] md:top-[9.34782608695651%] xl:top-[10.869565217391303%]" style={{ position: "absolute", backgroundColor: "#f0f0f0" }}>
 	<p className="text-[20px] md:text-[11px] xl:text-[20px] text-end md:text-center xl:text-end w-[80.68043742405831%] md:w-[87.23314397676486%] xl:w-[80.68043742405831%] h-[61.05571847507331%] md:h-[67.50733137829911%] xl:h-[61.05571847507331%] left-[9.113001215066822%] md:left-[7.9734000754656815%] xl:left-[9.113001215066822%] top-[16.715542521994138%] md:top-[9.970674486803519%] xl:top-[16.715542521994138%] absolute text-[#176f0b] md:text-[#80235e] xl:text-[#176f0b]">Dzięki takiemu podejściu logika generowania responsywnych klas oraz inline stylów została wyizolowana w oddzielnych funkcjach, co ułatwia późniejsze modyfikacje i utrzymanie kodu.</p>
   </div>
