@@ -15,7 +15,7 @@ const GeneratedPage: React.FC = () => {
 		loading="lazy"
 		className="w-full h-full rounded-[0px] border-0"></iframe>
 	</div>
-<div className="w-[61.62669573643411%] md:w-[35.900660569105696%] xl:w-[21.458333333333332%] h-[9.429129576505254%] md:h-[19.68346832815442%] xl:h-[8.939929328621908%] left-[17.87548449612408%] md:left-[59.343241869918685%] xl:left-[23.697916666666714%] top-[22.646442012123295%] md:top-[65.13178784982959%] xl:top-[82.9210836277976%] absolute">
+<div className="w-[61.62669573643411%] md:w-[35.900660569105696%] xl:w-[21.458333333333332%] h-[9.429129576505254%] md:h-[19.68346832815442%] xl:h-[8.939929328621908%] left-[17.87548449612408%] md:left-[59.343241869918685%] xl:left-[11.093750000000046%] top-[22.646442012123295%] md:top-[65.13178784982959%] xl:top-[71.96702002355724%] absolute">
   <Link href="/asdasd" className="bg-[#095840] hover:bg-[#49bc86] text-[#7a8118] hover:text-[#917878] text-[31px] font-[400] rounded-[80px] border-[2px] border-[#161466] hover:border-[#1a471f] px-4 py-2 cursor-pointer w-full h-full flex items-center justify-center">
     przycisk
   </Link>
