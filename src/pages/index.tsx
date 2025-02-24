@@ -14,11 +14,11 @@ const GeneratedPage: React.FC = () => {
       loading="lazy"
       className="w-full h-full rounded-[0px] border-0"></iframe>
   </div>
-<div className="w-[61.62669573643411%] md:w-[53.583587398373986%] xl:w-[17.239583333333332%] h-[9.429129576505254%] md:h-[6.688076623085298%] xl:h-[9.293286219081272%] left-[17.87548449612408%] md:left-[22.563516260162665%] xl:left-[12.7604166666667%] top-[22.646442012123295%] md:top-[41.076488310659144%] xl:top-[67.72673733804484%] absolute">
-    <a href="/asdasd" className="bg-[#a81f1f] hover:bg-[#49bc86] text-[#7a8118] hover:text-[#917878] text-[49px] font-[700] rounded-[80px] border-[2px] border-[#161466] hover:border-[#1a471f] px-4 py-2 cursor-pointer w-full h-full flex items-center justify-center">
-      CIPA
-    </a>
-  </div>
+<div className="w-[61.62669573643411%] md:w-[53.583587398373986%] xl:w-[21.458333333333332%] h-[9.429129576505254%] md:h-[6.688076623085298%] xl:h-[8.939929328621908%] left-[17.87548449612408%] md:left-[22.563516260162665%] xl:left-[9.114583333333362%] top-[22.646442012123295%] md:top-[41.076488310659144%] xl:top-[79.03415783274457%] absolute">
+  <Link href="/asdasd" className="bg-[#095840] hover:bg-[#49bc86] text-[#7a8118] hover:text-[#917878] text-[31px] font-[400] rounded-[80px] border-[2px] border-[#161466] hover:border-[#1a471f] px-4 py-2 cursor-pointer w-full h-full flex items-center justify-center">
+    przycisk
+  </Link>
+</div>
     </section>
 <section className="h-[93.3vh] md:h-[50vh]" style={{ position: "relative", backgroundColor: "#971717" }}>
       
