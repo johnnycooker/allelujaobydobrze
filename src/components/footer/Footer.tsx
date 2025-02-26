@@ -183,7 +183,7 @@ const Footer: FC = () => {
           ))}
         </div>
       
-        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[86%] xl:w-[80%] mx-auto my-4" />
+        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[86%] xl:w-[81%] mx-auto my-4" />
         
         <div className="px-[27px] md:px-[60px] xl:px-[189px] py-[24px] md:py-[35px] xl:py-[50px] flex justify-between items-center">
           <div className="flex flex-col">
@@ -213,7 +213,7 @@ const Footer: FC = () => {
           ))}
         </div>
       
-        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[86%] xl:w-[80%] mx-auto my-4" />
+        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[86%] xl:w-[81%] mx-auto my-4" />
         
         <div className="px-[27px] md:px-[60px] xl:px-[189px] py-[24px] md:py-[35px] xl:py-[50px] w-full relative flex justify-between items-center">
           <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[119px] md:w-[154px] xl:w-[193px] object-contain" />
@@ -245,7 +245,7 @@ const Footer: FC = () => {
             </div>
           </div>
         
-        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[86%] xl:w-[80%] mx-auto my-4" />
+        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[86%] xl:w-[81%] mx-auto my-4" />
         
           <div className="px-[27px] md:px-[60px] xl:px-[189px] py-[24px] md:py-[35px] xl:py-[50px] w-full relative flex justify-between items-center">
             <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[119px] md:w-[154px] xl:w-[193px] object-contain" />
