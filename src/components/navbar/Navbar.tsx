@@ -92,7 +92,7 @@ const Navbar: FC = () => {
   return (
     <>
       <motion.nav
-        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[91%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.6rem] md:h-[4.6rem] xl:h-[5.17rem] px-[1rem] md:px-[2rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
+        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[undefined] md:bg-[undefined] xl:bg-[undefined] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.60rem] md:h-[4.60rem] xl:h-[5.17rem] px-[1rem] md:px-[2rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
       >
         {/* MOBILE: widoczny tylko na < md */}
         <div className="flex items-center w-full md:hidden">
@@ -100,7 +100,7 @@ const Navbar: FC = () => {
           {/* Logo */}
           <Link href="/" className="md:ml-0">
             <img
-              src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
+              src=""
               alt="Logo"
               className="w-[180px] md:w-[188px] xl:w-[262px] h-[2.18rem] md:h-[3.14rem] xl:h-[3.78rem]"
             />
@@ -156,14 +156,14 @@ const Navbar: FC = () => {
     {/* Logo po lewej */}
     <Link href="/" className="mr-auto">
       <img
-        src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
+        src=""
         alt="Logo"
         className="w-[180px] md:w-[188px] xl:w-[262px] h-[2.18rem] md:h-[3.14rem] xl:h-[3.78rem]"
       />
     </Link>
 
     {/* Linki */}
-    <div className="space-x-[1rem]">
+    <div className="space-x-md:[1rem]">
       {navItems.map((item) => (
         <NavLink key={item.href} label={item.label} href={item.href} />
       ))}
@@ -177,14 +177,14 @@ const Navbar: FC = () => {
     {/* Logo po lewej */}
     <Link href="/" className="mr-auto">
       <img
-        src="https://i.postimg.cc/RCfr54hm/logo-navbar.png"
+        src=""
         alt="Logo"
         className="w-[180px] md:w-[188px] xl:w-[262px] h-[2.18rem] md:h-[3.14rem] xl:h-[3.78rem]"
       />
     </Link>
 
     {/* Linki */}
-    <div className="space-x-[2rem]">
+    <div className="space-x-xl:[2rem]">
       {navItems.map((item) => (
         <NavLink key={item.href} label={item.label} href={item.href} />
       ))}
@@ -213,11 +213,11 @@ const Navbar: FC = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.3 }}
-              className={`fixed z-50 md:hidden bg-[#fafafa] md:bg-[#fafafa] xl:bg-[#fafafa] left-0 md:left-0 xl:left-0 w-[80%] md:w-[80%] xl:w-[80%] shadow-md`}
+              className={`fixed z-50 md:hidden bg-[undefined] md:bg-[undefined] xl:bg-[undefined] left-0 md:left-0 xl:left-0 w-[undefined%] md:w-[undefined%] xl:w-[undefined%] shadow-md`}
               
       style={{
-        top: "4.6rem",
-        height: "calc(var(--vh, 1vh) * 100 - 4.6rem)",
+        top: "4.60rem",
+        height: "calc(var(--vh, 1vh) * 100 - 4.60rem)",
       }}
   
             >
