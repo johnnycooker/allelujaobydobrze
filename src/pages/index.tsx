@@ -7,7 +7,7 @@ const GeneratedPage: React.FC = () => {
   return (
     <MainLayout>
       
-<section className="h-[93.7vh] md:h-[118.1vh] xl:h-[92.4vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
+<section className="h-[93.7vh] md:h-[118.1vh] xl:h-[101.5vh]" style={{ position: "relative", backgroundColor: "#dedede" }}>
 	<img src="https://czat.ai/img/avatars/full-og/kotek.jpg" alt="" className="w-[80.63347868217055%] md:w-[87.73501016260164%] xl:w-[37.552083333333336%] h-[13.402271518413066%] md:h-[40.30314904626814%] xl:h-[36.279873855389646%] left-[7.441860465116281%] md:left-[6.686991869918722%] xl:left-[3.697916666666668%] top-[77.00303396392368%] md:top-[10.247279214409303%] xl:top-[19.930665010592822%] absolute" />
 <div className="w-[84.17151162790698%] md:w-[42.27134146341463%] xl:w-[43.333333333333336%] h-[31.45036382216422%] md:h-[33.742490806087545%] xl:h-[61.919905771495884%] left-[6.758720930232554%] md:left-[8.619156504065119%] xl:left-[51.25000000000001%] top-[42.21141494605254%] md:top-[58.756956626747%] xl:top-[18.468786808009412%] absolute">
 	  <iframe
