@@ -1,32 +1,33 @@
+
 import React, { FC, useState } from "react";
-  import Link from "next/link";
-  import {  } from "react-icons/fa";
-  
-  interface CategoryLink {
-    name: string;
-    url: string;
-  }
-  
-  interface Category {
-    name: string;
-    numberOfLinks: number;
-    links: CategoryLink[];
-  }
-  
-  interface IconItem {
-    name: string;
-    icon: string;
-    url: string;
-    iconColor: string;
-    iconHoverColor?: string;
-    iconSizeValues?: {
-      mobile: string;
-      tablet: string;
-      desktop: string;
-    };
-  }
-  
-  const categories: Category[] = [
+import Link from "next/link";
+import {  } from "react-icons/fa";
+
+interface CategoryLink {
+  name: string;
+  url: string;
+}
+
+interface Category {
+  name: string;
+  numberOfLinks: number;
+  links: CategoryLink[];
+}
+
+interface IconItem {
+  name: string;
+  icon: string;
+  url: string;
+  iconColor: string;
+  iconHoverColor?: string;
+  iconSizeValues?: {
+    mobile: string;
+    tablet: string;
+    desktop: string;
+  };
+}
+
+const categories: Category[] = [
   {
     "links": [
       {
@@ -132,49 +133,43 @@ import React, { FC, useState } from "react";
     "numberOfLinks": 5
   }
 ];
-  const icons: IconItem[] = [];
-  const numberOfCategories: number = 4;
- 
-  const iconMapping: Record<string, React.ComponentType<{ className?: string }>> = {
-    
-  };
+const icons: IconItem[] = [];
+const numberOfCategories: number = 4;
+
+const iconMapping: Record<string, React.ComponentType<{ className?: string }>> = {
   
-  // Komponent odpowiedzialny za pojedynczą ikonę
-  const IconLink: FC<{ iconItem: IconItem }> = ({ iconItem }) => {
-    const [hover, setHover] = useState(false);
-    const color = hover && iconItem.iconHoverColor
-      ? iconItem.iconHoverColor
-      : iconItem.iconColor;
-  
-    const sizeClasses = iconItem.iconSizeValues
-      ? `${iconItem.iconSizeValues.mobile} ${iconItem.iconSizeValues.tablet} ${iconItem.iconSizeValues.desktop}`
-      : "";
-  
-    const IconComponent = iconMapping[iconItem.icon];
-    if (!IconComponent) return null;
-  
-    return (
-      <Link href={iconItem.url} passHref legacyBehavior>
-        <a
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-          style={{ color: color, transition: "color 0.3s" }}
-          className={`${sizeClasses} inline-block`}
-        >
-          <IconComponent />
-        </a>
-      </Link>
-    );
-  };
-  
-  const renderIcons = () => icons.map((icon, i) => <IconLink key={i} iconItem={icon} />);
-  
-  const Footer: FC = () => {
-    return (
-      <footer className={`w-full bg-[#212121]`}>
-        {/* MOBILE layout */}
-        <div className="md:hidden">
-          
+};
+
+const IconLink: FC<{ iconItem: IconItem }> = ({ iconItem }) => {
+  const [hover, setHover] = useState(false);
+  const color = hover && iconItem.iconHoverColor ? iconItem.iconHoverColor : iconItem.iconColor;
+  const sizeClasses = iconItem.iconSizeValues
+    ? `${iconItem.iconSizeValues.mobile} ${iconItem.iconSizeValues.tablet} ${iconItem.iconSizeValues.desktop}`
+    : "";
+  const IconComponent = iconMapping[iconItem.icon];
+  if (!IconComponent) return null;
+  return (
+    <Link href={iconItem.url} passHref legacyBehavior>
+      <a
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        style={{ color, transition: "color 0.3s" }}
+        className={`${sizeClasses} inline-block`}
+      >
+        <IconComponent />
+      </a>
+    </Link>
+  );
+};
+
+const renderIcons = () => icons.map((icon, i) => <IconLink key={i} iconItem={icon} />);
+
+const Footer: FC = () => {
+  return (
+    <footer className={`w-full bg-[#303030]`}>
+      {/* MOBILE layout */}
+      <div className="md:hidden">
+        
         <div className="px-[29px] md:px-[68px] xl:px-[206px] py-[25px] md:py-[39px] xl:py-[38px]">
           {categories.slice(0, numberOfCategories).map((cat, i) => (
             <div key={i} className="mb-4">
@@ -188,8 +183,8 @@ import React, { FC, useState } from "react";
           ))}
         </div>
       
-          <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[85%] xl:w-[80%] mx-auto my-4" />
-          
+        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[85%] xl:w-[80%] mx-auto my-4" />
+        
         <div className="px-[27px] md:px-[60px] xl:px-[189px] py-[24px] md:py-[35px] xl:py-[50px] flex justify-between items-center">
           <div className="flex flex-col">
             <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[119px] md:w-[154px] xl:w-[193px] mb-2" />
@@ -201,11 +196,10 @@ import React, { FC, useState } from "react";
           </div>
         </div>
       
-        </div>
-  
-        {/* TABLET layout */}
-        <div className="hidden md:flex xl:hidden flex-col w-full">
-          
+      </div>
+      {/* TABLET layout */}
+      <div className="hidden md:flex xl:hidden flex-col w-full">
+        
         <div className="px-[29px] md:px-[68px] xl:px-[206px] py-[25px] md:py-[39px] xl:py-[38px] w-full grid grid-cols-2 gap-8">
           {categories.slice(0, numberOfCategories).map((cat, i) => (
             <div key={i}>
@@ -219,8 +213,8 @@ import React, { FC, useState } from "react";
           ))}
         </div>
       
-          <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[85%] xl:w-[80%] mx-auto my-4" />
-          
+        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[85%] xl:w-[80%] mx-auto my-4" />
+        
         <div className="px-[27px] md:px-[60px] xl:px-[189px] py-[24px] md:py-[35px] xl:py-[50px] w-full relative flex justify-between items-center">
           <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[119px] md:w-[154px] xl:w-[193px] object-contain" />
           <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-[10px] md:gap-[10px] xl:gap-[10px]">
@@ -232,11 +226,10 @@ import React, { FC, useState } from "react";
           </div>
         </div>
       
-        </div>
-  
-        {/* DESKTOP layout */}
-        <div className="hidden xl:flex flex-col w-full">
-          
+      </div>
+      {/* DESKTOP layout */}
+      <div className="hidden xl:flex flex-col w-full">
+        
           <div className="px-[29px] md:px-[68px] xl:px-[206px] py-[25px] md:py-[39px] xl:py-[38px] w-full">
             <div className="flex flex-wrap place-content-between gap-8">
               {categories.map((cat, i) => (
@@ -252,8 +245,8 @@ import React, { FC, useState } from "react";
             </div>
           </div>
         
-          <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[85%] xl:w-[80%] mx-auto my-4" />
-          
+        <div className="border-[#616161] border-[1px] md:border-[1px] xl:border-[1px] w-[86%] md:w-[85%] xl:w-[80%] mx-auto my-4" />
+        
           <div className="px-[27px] md:px-[60px] xl:px-[189px] py-[24px] md:py-[35px] xl:py-[50px] w-full relative flex justify-between items-center">
             <img src="https://i.postimg.cc/PJf14dFD/logo-admin.png" alt="Logo" className="w-[119px] md:w-[154px] xl:w-[193px] object-contain" />
             <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-[10px] md:gap-[10px] xl:gap-[10px]">
@@ -265,10 +258,10 @@ import React, { FC, useState } from "react";
             </div>
           </div>
         
-        </div>
-      </footer>
-    );
-  };
-  
-  export default Footer;
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
   
