@@ -33,17 +33,7 @@ const NavLink: FC<NavLinkProps> = ({ label, href, children, onClick }) => {
     >
       <span ref={linkRef}>{children ? children : label}</span>
 
-      <AnimatePresence>
-        {(isActive || isHovered) && (
-          <motion.span
-            className="absolute left-0 bottom-[-2px] h-[2px] bg-current"
-            initial={{ width: 0 }}
-            animate={{ width: underlineWidth }}
-            exit={{ width: 0 }}
-            transition={{ duration: 0.3 }}
-          />
-        )}
-      </AnimatePresence>
+      {/* underlineActiveLink = false => brak podkreślenia */}
     </Link>
   );
 };
