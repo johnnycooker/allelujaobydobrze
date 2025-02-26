@@ -64,7 +64,6 @@ const Navbar: FC = () => {
   };
 
   useEffect(() => {
-    // Fix dla wysokosci mobilnej (vh)
     const setVh = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -91,9 +90,7 @@ const Navbar: FC = () => {
 
   return (
     <>
-      <motion.nav
-        className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[13px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.6rem] md:h-[4.6rem] xl:h-[5.17rem] px-[1rem] md:px-[2rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}
-      >
+      <motion.nav className={`fixed w-full z-50 shadow-none md:shadow-none xl:shadow-lg bg-[#ffffff] md:bg-[#ffffff] xl:bg-[#ffffff] bg-opacity-[100%] md:bg-opacity-[100%] xl:bg-opacity-[100%] backdrop-blur-[0px] md:backdrop-blur-[0px] xl:backdrop-blur-[0px] border-[#000000] md:border-[#000000] xl:border-[#000000] border-solid md:border-solid xl:border-solid border-[0px] md:border-[0px] xl:border-[0px] rounded-b-[1px] md:rounded-b-[0px] xl:rounded-b-[0px] h-[4.6rem] md:h-[4.6rem] xl:h-[5.17rem] px-[1rem] md:px-[2rem] xl:px-[16rem] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} flex items-center`}>
         {/* MOBILE: widoczny tylko na < md */}
         <div className="flex items-center w-full md:hidden">
           
@@ -193,11 +190,9 @@ const Navbar: FC = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile menu panel (overlay + panel) */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
-            {/* Overlay */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.5 }}
@@ -206,8 +201,6 @@ const Navbar: FC = () => {
               className="fixed inset-0 bg-black z-40 md:hidden"
               onClick={toggleMobileMenu}
             />
-
-            {/* Panel menu */}
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
